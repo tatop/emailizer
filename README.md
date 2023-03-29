@@ -11,9 +11,9 @@ To install emailizer you need to install the following dependencies:
     
 You can install emailizer dependencies with pip:
 ```bash
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 Then just run the script:
 ```bash
-    python3 emailizer.py
+streamlit run main.py
 ```
