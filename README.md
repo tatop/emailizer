@@ -7,7 +7,7 @@ I created this tool because I'm a lazy person and I don't want to write emails i
 To install emailizer you need to install the following dependencies:
 - openai
 - langchain
-- openai
+- streamlit 
     
 You can install emailizer dependencies with pip:
 ```bash
