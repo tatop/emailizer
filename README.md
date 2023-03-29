@@ -3,7 +3,7 @@
 emailizer is a simple tool to translate and reformat emails from italian to english.
 I created this tool because I'm a lazy person and I don't want to write emails in english for my parents.
 
-![](streamlit-test-2023-03-29-18-03-84.webm)
+https://streamable.com/ymitf3
 
 ## Installation
 To install emailizer you need to install the following dependencies:
