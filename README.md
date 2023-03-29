@@ -1,6 +1,6 @@
 # emailizer
 
-emailizer is a simple tool to write emails from italian to english.
+emailizer is a simple tool to translate and reformat emails from italian to english.
 I created this tool because I'm a lazy person and I don't want to write emails in english for my parents.
 
 ## Installation
