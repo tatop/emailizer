@@ -5,7 +5,6 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts.chat import (
     ChatPromptTemplate,
     SystemMessagePromptTemplate,
-    AIMessagePromptTemplate,
     HumanMessagePromptTemplate,
 )
 
@@ -121,4 +120,3 @@ if mail_input:
             st.error("Woops, the api key is not valid")
         else:
             st.error("Woops, something went wrong")
-            st.write(e)
