@@ -1,17 +1,10 @@
 import streamlit as st
 from langchain import PromptTemplate, LLMChain
 from langchain.chat_models import ChatOpenAI
-import os
-from langchain.schema import (
-    AIMessage,
-    HumanMessage,
-    SystemMessage
-)
 
 from langchain.prompts.chat import (
     ChatPromptTemplate,
     SystemMessagePromptTemplate,
-    AIMessagePromptTemplate,
     HumanMessagePromptTemplate,
 )
 
@@ -20,7 +13,7 @@ st.set_page_config(page_title="Emailizer", page_icon=":email:", layout="centered
 
 template = """
 You are a helpful assistant that takes care of the following tasks:
-- Translate the email into the correct English type from Italian
+- Translate the email into the correct English type
 - Add the correct salutation
 - Add the correct closing
 - Takes care of the correct formality of the email
@@ -89,8 +82,8 @@ def load_llm(api_key):
     chain = LLMChain(llm=chat, prompt=chat_prompt)
     return chain
 
-st.title("Hello World")
-st.write("This is a test")
+st.title("Hey :wave:")
+st.write("This is a simple app that takes an email and translates it into the correct English type, adds the correct salutation and closing, and takes care of the correct formality of the email.")
 
 ai_key = st.text_input(label="AI key", placeholder="Enter your OpenAI api key", type="password")
 
@@ -127,4 +120,3 @@ if mail_input:
             st.error("Woops, the api key is not valid")
         else:
             st.error("Woops, something went wrong")
-            st.write(e)
